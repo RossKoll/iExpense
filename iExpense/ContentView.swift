@@ -72,6 +72,7 @@ struct ContentView: View {
                 .sheet(isPresented: $showingAddExpense){
                     AddView(expenses: self.expenses)
             }
+        .navigationBarItems(trailing: EditButton())
         }
     }
     
